@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import AddMovieReviewPage from './pages/addMovieReviewPage'
 import MoviesContextProvider from "./contexts/moviesContext";
 import SiteHeader from './components/siteHeader'
 import MovieReviewPage from "./pages/movieReviewPage";
@@ -32,6 +33,7 @@ const App = () => {
         <Routes>
       <Route path="/reviews/:id" element={ <MovieReviewPage /> } />
       <Route path="/movies/favorites" element={<FavoriteMoviesPage />} />
+      <Route path="/reviews/form" element={ <AddMovieReviewPage /> } />
       <Route path="/movies/:id" element={<MoviePage />} />
       <Route path="/movies/upcoming" element={<Upcoming />} />
       <Route path="/" element={<HomePage />} />
